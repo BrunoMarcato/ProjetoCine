@@ -7,3 +7,4 @@
     * Substituição de text-area por navbar bootstrap
     * Adição de card bootstrap
     * Adição de botão bootstrap no card bootstrap
+    * Adição de rodapé
