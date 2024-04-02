@@ -16,29 +16,27 @@
             </button>
 
             <!-- Botões do Menu -->
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <!-- OBS: LINKAR PÁGINA DOS FILMES -->
-                    <a class="nav-item nav-link btn-movie" href="filmes.html"></a>
-                    <!-- OBS: LINKAR PÁGINA DO CARDÁPIO -->
-                    <a class="nav-item nav-link btn-snack" href="loja.html">
+            <div class="navbar-nav">
+                <!-- OBS: LINKAR PÁGINA DOS FILMES -->
+                <a class="nav-item nav-link btn-movie" href="filmes.html"></a>
+                <!-- OBS: LINKAR PÁGINA DO CARDÁPIO -->
+                <a class="nav-item nav-link btn-snack" href="loja.html">
 
-                    <!-- ******************************************************  PARTE ALTERADA MARIANA (Letra d ) ********************************************* -->
-                    <!-- Subclasse que aparecerá ao passar o mouse sobre o ícone -->
-                        <div class="submenu">
-                            <p>COMBOS</p>
-                            <p>PIPOCAS</p>
-                            <p>BEBIDAS</p>
-                            <p>DIVERSOS</p>
-                        </div>
-                    </a>
-                    <!-- ************************************************************************************************ -->
+                <!-- ******************************************************  PARTE ALTERADA MARIANA (Letra d ) ********************************************* -->
+                <!-- Subclasse que aparecerá ao passar o mouse sobre o ícone -->
+                    <div class="submenu">
+                        <p>COMBOS</p>
+                        <p>PIPOCAS</p>
+                        <p>BEBIDAS</p>
+                        <p>DIVERSOS</p>
+                    </div>
+                </a>
+                <!-- ************************************************************************************************ -->
 
-                    <!-- OBS: LINKAR PÁGINA DA LOCALIZAÇÃO ou Colocar como uma aplicação -->
-                    <a class="nav-item nav-link btn-local" href="https://maps.app.goo.gl/MykokavV4w1hsV1f7"></a>
-                    <!-- OBS: LINKAR PÁGINA DA REDE SOCIAL -->
-                    <a class="nav-item nav-link btn-instagram" href="https://www.instagram.com/adorocinema/"></a>
-                </div>
+                <!-- OBS: LINKAR PÁGINA DA LOCALIZAÇÃO ou Colocar como uma aplicação -->
+                <a class="nav-item nav-link btn-local" href="https://maps.app.goo.gl/MykokavV4w1hsV1f7"></a>
+                <!-- OBS: LINKAR PÁGINA DA REDE SOCIAL -->
+                <a class="nav-item nav-link btn-instagram" href="https://www.instagram.com/adorocinema/"></a>
             </div>
         </nav>
 
@@ -50,72 +48,30 @@
                 <form action="#">
                     <div class="form-header">
                         <div class="title">
-                            <h1 class="vermelho">Cadastre-se</h1>
+                            <h1 class="vermelho">Login</h1>
                         </div>
                         <div class="login-button">
                             <button>
-                                <a href="login.html">Entrar</a>
+                                <a href="cadastro.html">Cadastro</a>
                             </button>
                         </div>
                     </div>
 
                     <div class="input-group">
                         <div class="input-box">
-                            <label for="firstname">Primeiro Nome</label>
-                            <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
-                        </div>
-
-                        <div class="input-box">
-                            <label for="lastname">Sobrenome</label>
-                            <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
-                        </div>
-                        <div class="input-box">
                             <label for="email">E-mail</label>
                             <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
                         </div>
-
-                        <div class="input-box">
-                            <label for="cpf">CPF</label>
-                            <input id="cpf" type="text" name="cpf" placeholder="Digite seu CPF" maxlength="14" oninput="this.value = this.value.replace(/[^0-9.-]/g, '')" required>
-                        </div>
-
                         <div class="input-box">
                             <label for="password">Senha</label>
                             <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
                         </div>
-
-
-                        <div class="input-box">
-                            <label for="confirmPassword">Confirme sua Senha</label>
-                            <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" required>
-                        </div>
-
                     </div>
-
-                    <div class="gender-inputs">
-                        <div class="gender-title">
-                            <h6>Gênero</h6>
-                        </div>
-
-                        <div class="gender-group">
-                            <div class="gender-input">
-                                <input id="male" type="radio" name="gender">
-                                <label for="male">Masculino</label>
-                            </div>
-
-                            <div class="gender-input">
-                                <input id="female" type="radio" name="gender">
-                                <label for="female">Feminino</label>
-                            </div>
-
-
-                            <div class="gender-input">
-                                <input id="others" type="radio" name="gender">
-                                <label for="others">Outros</label>
-                            </div>
-                        </div>
+                    <div class="forgot-password">
+                        <button>
+                            <a href="index.html">Esqueci minha senha</a>
+                        </button>
                     </div>
-
                     <div class="continue-button">
                         <button>
                             <a href="index.html">Continuar</a> 
@@ -154,6 +110,7 @@
           <!-- ******************************************************************************************************************************** -->
     
           </footer>
+
         <!-- <footer class="bg-body-tertiary text-center text-lg-start"> -->
             <!-- Copyright -->
             <!-- <div class="text-center p-3" style="background-color: #ff5757;"> -->

@@ -87,6 +87,47 @@
   
 }
 
+/*******************************************************  PARTE ALTERADA MARIANA (Letra d ) *********************************************/*
+
+ /* Estilo do sub menu dos snacks */
+ .submenu {
+  display: none;
+  position: absolute;
+  background-color: #ff5757;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  top: 30px; 
+  left: 0; /* Alinhar com o ícone */
+  width: 100px; 
+}
+
+/* Cor inicial dos itens do submenu */
+.submenu p {
+  color: #000000; /* Cor inicial dos itens */
+  font-family: 'Montserrat Classic', sans-serif; /* Fonte */
+  font-weight: bold; /* Altere para a espessura da fonte desejada */
+}
+
+/* Estilo para alterar a cor do texto ao passar o mouse sobre o submenu */
+.submenu p:hover {
+  color: #fff; 
+  font-family: 'Montserrat Classic', sans-serif; /* Fonte */
+  font-weight: bold; /* Altere para a espessura da fonte desejada */
+}
+
+/* Estilo para o ícone da pipoca */
+.nav-item.nav-link.btn-snack {
+  position: relative;
+}
+
+/* Estilo para mostrar a subclasse quando o mouse passa sobre o ícone */
+.nav-item.nav-link.btn-snack:hover .submenu {
+  display: block;
+}
+
+/*************************************************************************************************************************/
+
 .btn-local {
   width: 30px; /* Defina a largura do botão */
   height:30px; /* Defina a altura do botão */
@@ -116,4 +157,58 @@
   justify-content: center;
   align-items: center;
   margin-left: 20px; 
+}
+
+.seta-next {
+  width: 20px; /* Defina a largura do botão */
+  height: 20px; /* Defina a altura do botão */
+  background-image: url('../img/seta.png');
+  background-size: cover; /* Ajusta a imagem para cobrir todo o espaço do botão */
+  background-repeat: no-repeat; /* Evita que a imagem seja repetida */
+  background-position: center; /* Centraliza a imagem no botão */
+  border: none; /* Remove a borda do botão */
+  cursor: pointer; /* Mostra a mão quando o cursor passa sobre o botão */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seta-ant {
+  width: 20px; /* Defina a largura do botão */
+  height: 20px; /* Defina a altura do botão */
+  transform: scaleX(-1);
+  background-image: url('../img/seta.png');
+  background-size: cover; /* Ajusta a imagem para cobrir todo o espaço do botão */
+  background-repeat: no-repeat; /* Evita que a imagem seja repetida */
+  background-position: center; /* Centraliza a imagem no botão */
+  border: none; /* Remove a borda do botão */
+  cursor: pointer; /* Mostra a mão quando o cursor passa sobre o botão */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vermelho {
+  color:#ff5757;
+}
+
+
+.large-input {
+  width: 100%;
+  font-size: 18px; /* Ajuste o tamanho do texto conforme necessário */
+  padding: 10px; /* Adicione algum preenchimento para melhorar a aparência */
+  box-sizing: border-box; /* Garanta que o padding não afete a largura total */
+  margin-bottom: 10px; /* Adicione algum espaço na parte inferior do input */
+  height: 80px;
+}
+
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #ff5757;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
 }

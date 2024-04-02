@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Loja</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/form.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- Barra Superior com Menu de Navegação -->
+        <nav class="navbar navbar-expand-lg navbar-light barra">
+            <a class="navbar-brand btn-logo" href="index.html"><h3></h3></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Botões do Menu -->
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <!-- OBS: LINKAR PÁGINA DOS FILMES -->
+                    <a class="nav-item nav-link btn-movie" href="filmes.html"></a>
+                    <!-- OBS: LINKAR PÁGINA DO CARDÁPIO -->
+                    <a class="nav-item nav-link btn-snack" href="loja.html">
+
+                    <!-- ******************************************************  PARTE ALTERADA MARIANA (Letra d ) ********************************************* -->
+                      <!-- Subclasse que aparecerá ao passar o mouse sobre o ícone -->
+                      <div class="submenu">
+                        <p>COMBOS</p>
+                        <p>PIPOCAS</p>
+                        <p>BEBIDAS</p>
+                        <p>DIVERSOS</p>
+                      </div>
+                    </a>
+                    <!-- ************************************************************************************************ -->
+
+                    <!-- OBS: LINKAR PÁGINA DA LOCALIZAÇÃO ou Colocar como uma aplicação -->
+                    <a class="nav-item nav-link btn-local" href="https://maps.app.goo.gl/MykokavV4w1hsV1f7"></a>
+                    <!-- OBS: LINKAR PÁGINA DA REDE SOCIAL -->
+                    <a class="nav-item nav-link btn-instagram" href="https://www.instagram.com/adorocinema/"></a>
+                </div>
+                <div class="navbar-nav ml-auto">
+                  
+                    <a class="nav-item nav-link" href="login.html"><h5>Login</h5></a>
+                    <a class="nav-item nav-link" href="cadastro.html"><h5>Cadastro</h5></a>
+                    
+                </div>
+            </div>
+        </nav>
+
+        <!-- Filmes em Cartaz CARD-->>
+
+        <div class="row">
+            <div class="col mx-2">
+              <!-- Card 1 -->
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3aTG9TWcaFdGQXLfu4d4Fu78WN8BAZ5NSYA&usqp=CAU" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Pipoca Pequena: 5 Reais</h5>
+              <p class="card-text">Selecione a quantidade</p>
+              <div class="row">
+                <button class="seta-ant" id="reduzir-quantidade-pq"></button>
+                <input id="quantidade-pq" value="0" placeholder="0"></input>
+                <button class="seta-next" id="aumentar-quantidade-pq"></button>
+              </div>
+              <button type="button" class="btn btn-outline-dark" id="btn-pip-pq">Comprar</button>
+            </div>
+              </div>
+            </div>
+            <div class="col mx-2">
+              <!-- Card 2 -->
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3aTG9TWcaFdGQXLfu4d4Fu78WN8BAZ5NSYA&usqp=CAU" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Pipoca Média: 10 Reais</h5>
+              <p class="card-text">Selecione a quantidade</p>
+              <div class="row">
+                <button class="seta-ant" id="reduzir-quantidade-md"></button>
+                <input id="quantidade-md" value="0" placeholder="0"></input>
+                <button class="seta-next" id="aumentar-quantidade-md"></button>
+              </div>
+              <button type="button" class="btn btn-outline-dark" id="btn-pip-md">Comprar</button>
+            </div>
+              </div>
+            </div>
+            <div class="col mx-2">
+              <!-- Card 3 -->
+              <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3aTG9TWcaFdGQXLfu4d4Fu78WN8BAZ5NSYA&usqp=CAU" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Pipoca Grande: 15 Reais</h5>
+              <p class="card-text">Selecione a quantidade</p>
+              <div class="row">
+                <button class="seta-ant" id="reduzir-quantidade-gd"></button>
+                <input id="quantidade-gd" value="0" placeholder="0"></input>
+                <button class="seta-next" id="aumentar-quantidade-gd"></button>
+              </div>
+              <button type="button" class="btn btn-outline-dark" id="btn-pip-gd">Comprar</button>
+            </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- OBS: Fale Conosco e Sugestões no Rodapé-->
+
+        <!-- ******************************************************  PARTE ALTERADA MARIANA (Letra e ) ********************************************* -->
+        <!-- Seu conteúdo HTML -->
+        <footer class="bg-body-tertiary text-center text-lg-start fixed-bottom">
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: #ff5757;">
+            Entre em contato conosco pelo e-mail
+            <a class="text-body" href="#">projetocine@gmail.com.br</a> ou <a class="text-body" href="comentarios.html">clicando aqui</a></aqui><br>
+            <h6 class="bold-text">Projeto UTFPR 2024.1</h6>
+          </div>
+          <!-- Copyright -->
+  
+          <script>
+            // Expressão regular para encontrar o texto "Projeto UTFPR 2024.1"
+            var expressaoRegularTexto = /Projeto UTFPR 2024\.1/;
+  
+            // Selecionar todos os elementos com a classe 'bold-text'
+            var elementosBold = document.querySelectorAll('.bold-text');
+  
+            // Percorrer os elementos e aplicar a classe 'bold-text' para deixar o texto em negrito
+            elementosBold.forEach(function (elemento) {
+              if (expressaoRegularTexto.test(elemento.textContent)) {
+                elemento.classList.add('bold-text');
+              }
+            });
+          </script>
+        <!-- ******************************************************************************************************************************** -->
+  
+        </footer>
+        
+        <!-- </footer> -->
+    </body>
+    <script src="../js/cpfMask.js"></script>
+    <script src="../js/loja.js"></script>
+</html>

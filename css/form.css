@@ -55,7 +55,7 @@
 .login-button button {
     border: none;
     background-color: #ff5757;
-    padding: 0.4rem 1rem;
+    padding: 0.4rem 1.0rem;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -163,4 +163,18 @@
     font-size: 0.93rem;
     font-weight: 500;
     color: #fff;
+}
+
+.forgot-password button {
+    border: none;
+    background-color: #fff;
+  }
+
+.forgot-password button:hover a{
+    color:#000;
+    text-decoration: none;
+}
+
+.forgot-password button a {
+    color: #ff5757;
 }

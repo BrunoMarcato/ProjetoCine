@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Projeto Cine</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <!-- Barra Superior com Menu de Navegação -->
+        <nav class="navbar navbar-expand-lg navbar-light barra">
+            <a class="navbar-brand btn-logo" href="index.html"><h3></h3></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Botões do Menu -->
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <!-- OBS: LINKAR PÁGINA DOS FILMES -->
+                    <a class="nav-item nav-link btn-movie" href="filmes.html"></a>
+                    <!-- OBS: LINKAR PÁGINA DO CARDÁPIO -->
+                    <a class="nav-item nav-link btn-snack" href="loja.html">
+
+                    <!-- ******************************************************  PARTE ALTERADA MARIANA (Letra d ) ********************************************* -->
+                    <!-- Subclasse que aparecerá ao passar o mouse sobre o ícone -->
+                      <div class="submenu">
+                        <p>COMBOS</p>
+                        <p>PIPOCAS</p>
+                        <p>BEBIDAS</p>
+                        <p>DIVERSOS</p>
+                      </div>
+                    </a>
+                    <!-- ************************************************************************************************ -->
+
+                    <!-- OBS: LINKAR PÁGINA DA LOCALIZAÇÃO ou Colocar como uma aplicação -->
+                    <a class="nav-item nav-link btn-local" href="https://maps.app.goo.gl/MykokavV4w1hsV1f7"></a>
+                    <!-- OBS: LINKAR PÁGINA DA REDE SOCIAL -->
+                    <a class="nav-item nav-link btn-instagram" href="https://www.instagram.com/adorocinema/"></a>
+                </div>
+                <div class="navbar-nav ml-auto">
+                  
+                    <a class="nav-item nav-link" href="login.html"><h5>Login</h5></a>
+                    <a class="nav-item nav-link" href="cadastro.html"><h5>Cadastro</h5></a>
+                    
+                </div>
+            </div>
+        </nav>
+
+        <!-- OBS: Lembrar de Linkar os Botões. Se possível, trocar redes sociais por simbolos com Links diretos para as páginas do Instagram e Facebook -->
+        <!-- Fim de Barra Superior-->
+
+
+
+        <!-- Seção de Experiência do Usuário -->
+        <div id="experienciaUsuario" class="container" style="color: #fff">
+            <h2 >Fale sobre como foi sua experiência conosco!</h2>
+            <label for="texto">Digite aqui:</label><br>
+            <input type="text" id="texto" maxlength="500" class="large-input">
+            <p>Total de letras digitadas: <span id="contador">0/500</span></p>
+            <button onclick="submitForm()">Enviar</button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div id="lista" class="container" style="color:#fff;">
+            <h3>Nossas Últimas Avaliações de Acordo com as Críticas</h3>
+            <ul>
+                <li>Globo - 85</li>
+                <li>Omelete - 92</li>
+                <li>Record - 86</li>
+                <li>Gazeta - 88</li>
+            </ul>
+        </div>
+
+
+
+
+
+
+
+
+
+          
+          <!-- ******************************************************  PARTE ALTERADA MARIANA (Letra e ) ********************************************* -->
+      <!-- Seu conteúdo HTML -->
+      <footer class="bg-body-tertiary text-center text-lg-start fixed-bottom">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #ff5757;">
+          Entre em contato conosco pelo e-mail
+          <a class="text-body" href="#">projetocine@gmail.com.br</a> ou <a class="text-body" href="comentarios.html">clicando aqui</a></aqui><br>
+          <h6 class="bold-text">Projeto UTFPR 2024.1</h6>
+        </div>
+        <!-- Copyright -->
+
+        <script>
+          // Expressão regular para encontrar o texto "Projeto UTFPR 2024.1"
+          var expressaoRegularTexto = /Projeto UTFPR 2024\.1/;
+
+          // Selecionar todos os elementos com a classe 'bold-text'
+          var elementosBold = document.querySelectorAll('.bold-text');
+
+          // Percorrer os elementos e aplicar a classe 'bold-text' para deixar o texto em negrito
+          elementosBold.forEach(function (elemento) {
+            if (expressaoRegularTexto.test(elemento.textContent)) {
+              elemento.classList.add('bold-text');
+            }
+          });
+        </script>
+      <!-- ******************************************************************************************************************************** -->
+
+      </footer>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+</html>
