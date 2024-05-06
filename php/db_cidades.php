@@ -177,7 +177,7 @@
 		if(!$table_already_exists) {
 			definirUTF8($db);
 
-			$fname = 'estados.txt';
+			$fname = '../data/estados.txt';
 			$fp = abrirArquivo($db,$fname);
 
 			lerArquivoEstados($db,$fp,$fname);
@@ -186,7 +186,7 @@
 
 			fecharArquivo($fp,$fname);
 				
-			$fname = 'municipios.csv';
+			$fname = '../data/municipios.csv';
 			$fp = abrirArquivo($db,$fname);
 
 			lerArquivoCidades($db,$fp,$fname);
